@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,60 @@
 </head>
 <body>
     <form action="#"
-          method="get"
-          target="_blank"
+          method="post"
+          onsubmit="alert('Formulário enviado!');"
+          autocomplete="on"
     >
 
         <label>Nome:</label>
+        <br>
         <input type="text"/ required> 
         </br>
         <label>Senha:</label>
+        <br>
         <input type="password" / required>
+        <br>
+        <label>Idade:</label>
+        <br>
+        <input type="number" placeholder="idade"
+               min="0" max="10000"/ required >
         </br>
+        <label>E-mail:</label>
+        <br>
+        <input type="email" name="e-mail" / required>
+        <br>
+        <label>Data:</label>
+        <br>
+        <input type="date" name="data" placeholder="data" / required >
+        <br>
+        <input type="checkbox" name="futebol"> <label> Futebol</label>
+        <br>
+        <input type="checkbox" name="basquete"> <label> Basquete</label>
+        <br>
+        <input type="checkbox" name="volei"> <label> Vôlei</label>
+        <br>
+        <input type="radio" name="time" > <label> GALAO DA MASSA</label>
+        <br>
+        <input type="radio" name="time" > <label> Varmengo </label>
+        <br>
+        <input type="radio" name="time" > <label> Bruzeiro </label>
+        <br>
+        <input type="radio" name="time" > <label> Nenhum pq eu dou o bumbum</label>
+        <br>
+        <label>Obs:</label>
+        <br>
+        <textarea name="observacoes" placeholder="Digite aqui..."> </textarea> 
+        <br>
+        <label>Cidade</label>
+        <select name="cidade" >
+            <option value="Varginha" > Varginha </option>
+            <option value="Três pontas" > Três Pontas</option>
+            <option value="Elói Mnedes" > Elói Mendes </option>
+        </select >
+        <br>
         <button type="submit"> Enviar </button> 
+        <button type="reset" > Limpar </button>
+        <input type="button" value="teste" onclick="alert('clicou');"/>
     
     </form>
 </body>
